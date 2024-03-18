@@ -19,4 +19,52 @@ public class Climbing {
     private LocalDate Date;
     private LocalTime TimeStart;
     private LocalTime TimeEnd;
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public Integer getParticipants() {
+        return Participants;
+    }
+
+    public void setParticipants(Integer participants) {
+        Participants = participants;
+    }
+
+    public LocalDate getDate() {
+        return Date;
+    }
+
+    public void setDate(LocalDate date) {
+        Date = date;
+    }
+
+    public LocalTime getTimeStart() {
+        return TimeStart;
+    }
+
+    public void setTimeStart(LocalTime timeStart) {
+        TimeStart = timeStart;
+    }
+
+    public LocalTime getTimeEnd() {
+        return TimeEnd;
+    }
+
+    public void setTimeEnd(LocalTime timeEnd) {
+        TimeEnd = timeEnd;
+    }
 }
