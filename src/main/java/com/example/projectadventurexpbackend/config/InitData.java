@@ -9,12 +9,8 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-@Component
-public class InitData implements CommandLineRunner {
+// @Component
+// public class InitData implements CommandLineRunner {
 
 
-    @Override
-    public void run(String... args) throws Exception {
 
-    }
-}
