@@ -18,13 +18,13 @@ public class Minigolf {
     private String Name;
     private Integer Participants;
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    private LocalDate date;
+    private LocalDate Date;
 
     @DateTimeFormat(pattern = "HH:mm")
-    private LocalTime timeStart;
+    private LocalTime TimeStart;
 
     @DateTimeFormat(pattern = "HH:mm")
-    private LocalTime timeEnd;
+    private LocalTime TimeEnd;
 
     public int getId() {
         return Id;
