@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -16,9 +17,14 @@ public class Minigolf {
     private int Id;
     private String Name;
     private Integer Participants;
-    private LocalDate Date;
-    private LocalTime TimeStart;
-    private LocalTime TimeEnd;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalDate date;
+
+    @DateTimeFormat(pattern = "HH:mm")
+    private LocalTime timeStart;
+
+    @DateTimeFormat(pattern = "HH:mm")
+    private LocalTime timeEnd;
 
     public int getId() {
         return Id;
