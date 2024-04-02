@@ -1,8 +1,5 @@
 package com.example.projectadventurexpbackend.Model;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -16,6 +13,7 @@ public class GoKart {
     private int Id;
     private String Name;
     private Integer Participants;
+    @Column(name = "Date")
     private LocalDate Date;
     private LocalTime TimeStart;
     private LocalTime TimeEnd;
