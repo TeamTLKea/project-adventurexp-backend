@@ -12,7 +12,6 @@ import com.example.projectadventurexpbackend.Model.Paintball;
 import com.example.projectadventurexpbackend.Model.Climbing;
 
 @RestController
-@RequestMapping("/api")
 public class DataCleanupController {
 
     @Autowired
