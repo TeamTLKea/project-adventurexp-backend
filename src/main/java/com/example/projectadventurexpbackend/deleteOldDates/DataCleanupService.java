@@ -31,13 +31,13 @@ public class DataCleanupService {
     public void deleteOldDataForEntities(List<Class<?>> entityClasses, LocalDate cutoffDate) {
         for (Class<?> entityClass : entityClasses) {
             if (Minigolf.class.isAssignableFrom(entityClass)) {
-                minigolfRepository.deleteOldDatesBefore(cutoffDate);
+                minigolfRepository.deleteByDateBefore(cutoffDate);
             } else if (GoKart.class.isAssignableFrom(entityClass)) {
-                gokartRepository.deleteOldDatesBefore(cutoffDate);
+                gokartRepository.deleteByDateBefore(cutoffDate);
             } else if (Climbing.class.isAssignableFrom(entityClass)) {
-                climbingRepository.deleteOldDatesBefore(cutoffDate);
+                climbingRepository.deleteByDateBefore(cutoffDate);
             } else if (Paintball.class.isAssignableFrom(entityClass)) {
-                paintballRepository.deleteOldDatesBefore(cutoffDate);
+                paintballRepository.deleteByDateBefore(cutoffDate);
             }
         }
     }
