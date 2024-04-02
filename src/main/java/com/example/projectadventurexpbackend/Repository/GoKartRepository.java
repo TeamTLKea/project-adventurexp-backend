@@ -8,5 +8,4 @@ import java.time.LocalDate;
 
 
 public interface GoKartRepository extends JpaRepository<GoKart, Integer> {
-    void deleteByDateBefore(LocalDate cutoffDate);
 }

@@ -8,6 +8,5 @@ import java.time.LocalDate;
 
 
 public interface PaintballRepository extends JpaRepository<Paintball, Integer> {
-    void deleteByDateBefore(LocalDate cutoffDate);
 
 }

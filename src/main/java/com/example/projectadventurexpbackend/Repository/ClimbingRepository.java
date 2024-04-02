@@ -7,5 +7,4 @@ import java.time.LocalDate;
 
 
 public interface ClimbingRepository extends JpaRepository<Climbing, Integer> {
- void deleteByDateBefore(LocalDate cutoffDate);
 }
