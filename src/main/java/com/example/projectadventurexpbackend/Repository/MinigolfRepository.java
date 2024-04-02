@@ -7,5 +7,4 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface MinigolfRepository extends JpaRepository<Minigolf, Integer> {
-    void deleteOldDatesBefore(LocalDate cutoffDate);
 }

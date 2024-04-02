@@ -8,5 +8,4 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface PaintballRepository extends JpaRepository<Paintball, Integer> {
-    void deleteOldDatesBefore(LocalDate cutoffDate);
 }
